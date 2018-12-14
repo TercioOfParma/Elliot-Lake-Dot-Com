@@ -1,4 +1,8 @@
-﻿<html>
+﻿{% load static %}
+
+<html>
+
+
 	<head>
 	
 		<!-- JQuery is necessary to even run Bootstrap -->
@@ -14,9 +18,18 @@
 
 
 	<body>
-
+		<div class="row">
+			<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+				<img src="{% static 'img/profile.jpg' %}" class="img-fluid"  /> 
+			</div>
+			<div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-11">
+				<h1> Elliot's Blog and Site </h1>
+			</div>
+		
+		
+		<div class="container">
 			{% block content %} {% endblock %} <!-- Imports the page --> 
-
+		</div>
 	</body>
 
 
