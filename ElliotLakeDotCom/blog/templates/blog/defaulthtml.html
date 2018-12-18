@@ -18,18 +18,31 @@
 
 
 	<body>
-		<div class="row">
-			<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-				<img src="{% static 'img/profile.jpg' %}" class="img-fluid"  /> 
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+					<img src="{% static 'img/profile.jpg' %}" class="img-fluid"  /> 
+				</div>
+				<div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-11">
+					<h1> Elliot's Blog and Site </h1>
+				</div>
 			</div>
-			<div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-11">
-				<h1> Elliot's Blog and Site </h1>
+			<div class="row">
+				
+				<div class="col-1">
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-action"> <h6> <a href="home"> Home </a> </h6> </li>
+						<li class="list-group-item list-group-item-action"> <h6> <a href="security"> Security Blog </a> </h6> </li>
+						<li class="list-group-item list-group-item-action"> <h6> <a href="proj"> Current Projects </a> </h6> </li>
+						<li class="list-group-item list-group-item-action"> <h6> <a href="cv"> CV </a> </h6> </li>
+					</ul>
+				</div>
+				<div class="col-11">
+					{% block content %} {% endblock %} <!-- Imports the page --> 
+				</div>
 			</div>
-		
-		
-		<div class="container">
-			{% block content %} {% endblock %} <!-- Imports the page --> 
 		</div>
+		
 	</body>
 
 
