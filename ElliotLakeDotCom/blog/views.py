@@ -22,3 +22,6 @@ def bloghome(request):
 def home(request):
     return render(request, "blog/home.html")
 
+
+def books(request):
+    return render(request, "blog/books.html")

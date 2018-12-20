@@ -23,5 +23,6 @@ urlpatterns = [
     re_path(r"^home$", views.home),
     re_path(r"^blog", views.bloghome),
     re_path(r"cv", views.cv),
-    re_path(r"projects", views.projects)
+    re_path(r"projects", views.projects),
+    re_path(r"books", views.books),
 ]
